@@ -1629,11 +1629,6 @@ body::-webkit-scrollbar-track {
     }
 }
 
-
-
-
-
-
 .contact-section {
     text-align: center; /* Center the text and button */
     padding: 20px; /* Add some padding around the section */
@@ -1671,15 +1666,6 @@ body::-webkit-scrollbar-track {
         padding: 8px 16px; /* Slightly smaller button padding for mobile */
     }
 }
-
-
-
-
-
-
-
-
-
 
 @media (min-width: 1025px) {
     .header-link:hover,
