@@ -809,6 +809,7 @@ body::-webkit-scrollbar-track {
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
+    gap: 15px;
   }
   
   .form-image {
@@ -905,23 +906,374 @@ body::-webkit-scrollbar-track {
   .checkbox label a:hover {
     text-decoration: underline;
   }
+
+
+  @media (max-width:900px) {
+    .contact-form-container {
+        flex-direction: column;
+        text-align: center;
+      }
+    
+      .form-image {
+        margin-bottom: 20px;
+        max-width: 100%; 
+      }
+    
+      .form-content {
+        max-width: 100%;
+      }
+    
+  }
   
-  .contact-form-container {
-    flex-direction: column;
+  
+
+  .introductione {
+    position: relative;
+    height: 900px;
+    background-image: url('/img/tournaments/t1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+  
+  }
+  
+  
+  .background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(16, 6, 6, 0.488); 
+    z-index: 1; 
+  }
+  
+  .hero-content {
+    position: relative;
+    max-width: 1900px;
+    margin: auto;
+    z-index: 2; 
+  }
+  
+  .hero-text {
+    margin-right: 20px;
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    color: white;
+    max-width: 80%;
+    text-shadow: 
+    -1px -1px 0px black,  
+     1px -1px 0px black,
+    -1px  1px 0px black,
+     1px  1px 0px black; /* Черная обводка */
+  }
+  
+  
+  .hero-title {
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+    text-shadow: 
+    -1px -1px 0px black,  
+     1px -1px 0px black,
+    -1px  1px 0px black,
+     1px  1px 0px black; /* Черная обводка */
+  }
+  
+  
+  .hero-paragraph {
+    color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+    font-size: 40px;
+  }
+
+
+  
+.Game-Content {
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .Game-Content:nth-child(even) {
+    background: var(--body-color);
+  }
+  
+  .section-header {
+    font-family: var(--font-headings);
+    color: var(--heading-color);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+  }
+  
+  .section-text {
+    font-family: var(--font-body);
+    color: var(--text-color);
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .image-wrapper {
+    margin: 2rem auto;
+    max-width: 800px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  
+  .section-image:hover {
+    transform: scale(1.02);
+  }
+  
+  .year-text {
+    color: var(--primary-color);
+    font-weight: 600;
+  }
+  
+  .next-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+  
+  @media (max-width: 768px) {
+    .next-column {
+        grid-template-columns: 1fr;
+    }
+    .section-header {
+      font-size: 2rem;
+    }
+  }
+  .tournament-products-container {
+    padding: 20px;
+    background-color: #f9f9f9; /* Цвет фона секции */
     text-align: center;
-  }
+}
 
-  .form-image {
+.tournament-section-title {
+    font-size: 2em;
     margin-bottom: 20px;
-    max-width: 100%; 
-  }
+    color: #333;
+}
 
-  .form-content {
-    max-width: 100%;
-  }
+.tournament-game-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+.tournament-game-block {
+    background-color: #fff; /* Цвет фона для блока игры */
+    border: 1px solid #ddd; /* Рамка блока */
+    border-radius: 8px; /* Скругленные углы */
+    margin: 15px; /* Отступы между блоками */
+    width: 200px; /* Ширина блока */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Тень блока */
+    transition: transform 0.2s; /* Анимация при наведении */
+    overflow: hidden; /* Скрыть переполнение */
+}
 
+.tournament-game-block:hover {
+    transform: translateY(-5px); /* Подъем блока при наведении */
+}
 
+.tournament-game-image {
+    width: 100%; /* Ширина изображения */
+    height: auto; /* Автоматическая высота */
+}
+
+.tournament-game-content {
+    padding: 15px; /* Отступы внутри блока содержания */
+}
+
+.tournament-game-title {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #555;
+}
+
+.tournament-learn-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Цвет кнопки */
+    color: #fff; /* Цвет текста кнопки */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.tournament-learn-more-btn:hover {
+    background-color: #0056b3; /* Цвет кнопки при наведении */
+}  
+
+.app-download-section {
+    background-color: #f0f8ff; /* Цвет фона секции */
+    padding: 40px 20px; /* Внутренние отступы */
+    text-align: center; /* Центрирование текста */
+}
+
+.wrapper {
+    max-width: 1200px; /* Ограничение ширины контейнера */
+    margin: 0 auto; /* Центрирование контейнера */
+}
+
+.app-download-container {
+    display: flex;
+    flex-direction: row; /* Горизонтальное расположение элементов */
+    align-items: center; /* Вертикальное выравнивание */
+    justify-content: space-between; /* Пространство между элементами */
+}
+
+.app-download-content {
+    flex: 1; /* Занимает 1 часть доступного пространства */
+    padding-right: 20px; /* Правый отступ */
+}
+
+.app-download-title {
+    font-size: 2.5em; /* Размер шрифта заголовка */
+    margin-bottom: 10px; /* Отступ снизу */
+    color: #333; /* Цвет текста заголовка */
+}
+
+.app-download-subtitle {
+    font-size: 1.2em; /* Размер шрифта подзаголовка */
+    margin-bottom: 20px; /* Отступ снизу */
+    color: #666; /* Цвет текста подзаголовка */
+}
+
+.app-download-buttons {
+    margin-top: 20px; /* Отступ сверху */
+}
+
+.main-button {
+    display: inline-block; /* Визуальный блок в одну строку */
+    padding: 10px 25px; /* Внутренние отступы кнопки */
+    font-size: 1.1em; /* Размер шрифта кнопки */
+    background-color: #007bff; /* Основной цвет кнопки */
+    color: #fff; /* Цвет текста кнопки */
+    text-decoration: none; /* Удаление подчеркивания */
+    border-radius: 5px; /* Скругленные углы */
+    transition: background-color 0.3s; /* Плавный переход цвета */
+}
+
+.main-button:hover {
+    background-color: #0056b3; /* Цвет кнопки при наведении */
+}
+
+.app-download-images {
+    flex: 1; /* Занимает 1 часть доступного пространства */
+    display: flex; /* Flexbox для изображений */
+    justify-content: center; /* Центрирование изображений */
+    align-items: center; /* Вертикальное выравнивание */
+}
+
+.image-container {
+    position: relative; /* Относительное позиционирование для наложения изображений */
+}
+
+.app-image {
+    max-width: 100%; /* Максимальная ширина изображения */
+    height: auto; /* Автоматическая высота */
+}
+
+.app-image--main {
+    position: relative; /* Позиционирование для основного изображения */
+    z-index: 1; /* Обеспечение наложения */
+}
+
+.app-image--floating {
+    position: absolute; /* Абсолютное позиционирование для плавающего изображения */
+    top: 0; /* Выровнять по верхнему краю */
+    left: 20%; /* Задайте смещение по горизонтали */
+    z-index: 0; /* Обеспечение наложения */
+    transform: scale(0.8); /* Уменьшение плавающего изображения */
+    transition: transform 0.3s; /* Плавный переход масштаба */
+}
+
+.app-image--floating:hover {
+    transform: scale(1); /* Увеличение масштаба при наведении */
+}
+
+.elite-united-app {
+    background: linear-gradient(to right, #e24f4a, #dca60f); /* Gradient background for vibrancy */
+    color: #fff; /* White text for contrast */
+    padding: 40px 20px;
+    text-align: center; /* Center align content */
+    border-radius: 10px; /* Rounded corners */
+    margin: 20px auto; /* Space around the section */
+    max-width: 800px; /* Limit max width */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Soft shadow */
+}
+
+.elite-united-app h1 {
+    font-size: 2.5rem; /* Larger title for impact */
+    margin-bottom: 15px; /* Space below title */
+}
+
+.elite-united-app .app-subtitle {
+    font-size: 1.2rem; /* Subtitle size */
+    margin-bottom: 30px; /* Space below subtitle */
+}
+
+.elite-united-app .app-buttons {
+    display: flex; /* Flexbox for button layout */
+    justify-content: center; /* Center align buttons */
+    gap: 20px; /* Space between buttons */
+}
+
+.elite-united-app .btn {
+    padding: 15px 30px; /* Padding for buttons */
+    border-radius: 5px; /* Slightly rounded corners for buttons */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text for emphasis */
+    transition: 0.3s; /* Transition for hover effects */
+}
+
+.elite-united-app .btn.primary {
+    background-color: #007BFF; /* Primary button color */
+    color: #fff; /* White text */
+}
+
+.elite-united-app .btn.secondary {
+    background-color: #28A745; /* Secondary button color */
+    color: #fff; /* White text */
+}
+
+.elite-united-app .btn:hover {
+    opacity: 0.9; /* Button hover effect */
+    transform: translateY(-2px); /* Raise button slightly */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+@media (max-width:1200px) {
+    .hero-paragraph{
+        font-size: 30px;
+    }
+    
+}
+@media (max-width:700px) {
+    .hero-paragraph{
+        font-size: 22px;
+    }
+    .hero-text{
+        top: 100px;
+    }
+    .hero-title{
+        font-size: 30px;
+    }
+    
+}
 
 
 
