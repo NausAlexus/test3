@@ -263,7 +263,7 @@ body::-webkit-scrollbar-track {
 
 .footer {
     background-color: #db5837; /* Темно-синий цвет фона */
-    color: #000000; /* Светлый цвет текста */
+    color: #ffffff; /* Светлый цвет текста */
     padding: 10px 0;
     margin-top: auto;
     border-top: 2px solid black;
@@ -287,11 +287,12 @@ body::-webkit-scrollbar-track {
 .footer-location,
 .footer-phone,
 .footer-email {
-    color: #000000; /* Цвет текста */
+    color: #ffffff; /* Цвет текста */
     display: flex; /* Блочный элемент для переноса на новую строку */
     align-items: center;
     gap: 8px;
     text-decoration: none; /* Убираем подчеркивание */
+    transition: color 0.3s; /* Плавный переход цвета */
 }
 
 .footer-links {
@@ -301,7 +302,7 @@ body::-webkit-scrollbar-track {
 
 .footer-links a {
     margin: 0 10px; /* Группируем ссылки с отступами */
-    color: #000000; /* Цвет текста */
+    color: #ffffff; /* Цвет текста */
     text-decoration: none; /* Убираем подчеркивание */
     transition: color 0.3s; /* Плавный переход цвета */
 }
@@ -371,5 +372,17 @@ body::-webkit-scrollbar-track {
     }
     .nav-link:hover {
         border-bottom: 1px solid white;
+    }
+    .footer-links a:hover {
+        color: #000000;
+    }
+    .footer-location:hover,
+    .footer-phone:hover,
+    .footer-email:hover {
+        color: #000000;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        text-decoration: none;
     }
 }
