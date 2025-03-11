@@ -794,6 +794,89 @@ body::-webkit-scrollbar-track {
     }
 }
 
+.privacy-content {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.privacy-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.last-updated {
+    font-size: 0.9em;
+    color: gray;
+}
+
+.section-title {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.definition-list, .personal-data-list, .tracking-list, .usage-list, .rights-list, .contact-list {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.definition-item, .personal-data-item, .tracking-item, .usage-item, .rights-item, .contact-item {
+    margin-bottom: 5px;
+}
+
+.terms-content {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.terms-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.last-updated {
+    font-size: 0.9em;
+    color: gray;
+}
+
+.section-title {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.definition-list, .contact-list {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.definition-item, .contact-item {
+    margin-bottom: 5px;
+}
+
+.acknowledgment-description, 
+.links-description, 
+.termination-description, 
+.liability-description, 
+.disclaimer-description, 
+.governing-law-description, 
+.dispute-resolution-description, 
+.eu-consumer-description, 
+.us-compliance-description, 
+.severability-description, 
+.waiver-description, 
+.translation-description, 
+.changes-description {
+    margin-bottom: 10px;
+}
 
 
 
@@ -805,6 +888,48 @@ body::-webkit-scrollbar-track {
 
 
 
+
+
+.cookies-policy-content {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.cookies-policy-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.last-updated {
+    font-size: 0.9em;
+    color: gray;
+}
+
+.section-title {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.definition-list, .contact-list, .browser-links {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.definition-item, .contact-item, .browser-link-item {
+    margin-bottom: 5px;
+}
+
+.choices-description, 
+.cookies-introduction, 
+.cookie-use-description, 
+.cookie-types-description {
+    margin-bottom: 10px;
+}
 
 
 
