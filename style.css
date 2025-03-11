@@ -15,6 +15,9 @@ body {
 html {
     scroll-behavior: smooth;
 }
+a {
+    text-decoration: none;
+}
 
 body {
     font-family: "Poppins", sans-serif;
@@ -1555,6 +1558,124 @@ body::-webkit-scrollbar-track {
         flex-direction: column-reverse;
     }
 }
+
+
+
+.how-it-work-content {
+    padding: 40px;
+}
+
+.football-fantasy-guide {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 80%;
+    margin: auto;
+}
+
+.guide-title {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.guide-introduction {
+    font-size: 1.2rem;
+    color: #34495e;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.get-started-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto 30px;
+    transition: background-color 0.3s;
+}
+
+.get-started-button:hover {
+    background-color: #218838;
+}
+
+.dessert-image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.dessert-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.discover-intro {
+    font-size: 1.1rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.guide-steps {
+    border-top: 2px solid #eaeaea;
+    padding-top: 20px;
+}
+
+.guide-step:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.step-header {
+    font-size: 1.5rem;
+    color: #fa1e01;
+}
+
+.step-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.step-list li {
+    margin-bottom: 10px;
+    color: #34495e;
+}
+
+.expert-tips {
+    border-top: 2px solid #eaeaea;
+    padding-top: 20px;
+    margin-top: 30px;
+}
+
+.tips-title {
+    font-size: 1.5rem;
+    color: #e67e22;
+}
+
+.tips-list {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.tips-list li {
+    margin-bottom: 10px;
+    color: #34495e;
+}
+
+.call-to-action {
+    font-size: 1.2rem;
+    color: #e74c3c;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
 
 
 
