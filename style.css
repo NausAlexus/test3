@@ -878,18 +878,6 @@ body::-webkit-scrollbar-track {
     margin-bottom: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .cookies-policy-content {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -941,6 +929,102 @@ body::-webkit-scrollbar-track {
 
 
 
+.blog-content{
+    margin-top: 80px;
+}
+
+.blog-heading {
+    text-align: center;
+    font-size: 2.5em;
+    color: #000000;
+    margin: 0;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .blog-heading {
+        font-size: 2em;
+    }
+
+    .blog-content {
+        padding: 30px 15px;
+    }
+}
+
+.blog-product-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap; 
+    margin: 20px;   
+}
+
+.blog-card {
+    padding: 20px;              
+    margin: 10px;             
+    text-align: center;      
+}
+
+.blog-small-card {
+    flex: 1 1 25%;           
+    max-width: 25%;       
+}
+
+.blog-large-card {
+    flex: 1 1 50%;         
+    max-width: 50%;           
+}
+
+.blog-product-image {
+    width: 100%;                
+    height: auto;          
+    border-radius: 8px;     
+}
+
+.blog-product-title {
+    font-size: 1.5em;      
+    margin: 10px 0;  
+}
+
+.blog-old-price {
+    color: lightgray;          
+    text-decoration: line-through;
+}
+
+.blog-new-price {
+    color: black;         
+    font-weight: bold;       
+}
+
+@media (max-width: 768px) {
+    .blog-product-cards {
+        flex-direction: column;  
+    }
+    
+    .blog-card {
+        flex: 1 1 100%;           
+        max-width: 100%;         
+    }
+}
+.order-btn {
+    margin-top: 5px;
+    padding: 4px 25px;
+    background-color: #b92b12d0;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease,
+                color 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 1025px) {
     .header-link:hover,
     .footer-brand:hover {
@@ -975,5 +1059,9 @@ body::-webkit-scrollbar-track {
     }
     .btn-review:hover {
         background-color: #b92b12d0;
+    }
+    .order-btn:hover {
+        background-color: #a5a5a5;
+        color: rgb(61, 61, 61);
     }
 }
