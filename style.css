@@ -776,7 +776,7 @@ body::-webkit-scrollbar-track {
 }
 
 .comprehensive-benefits-list {
-    list-style-type: disc;
+    list-style: none;
     padding-left: 20px;
 }
 
