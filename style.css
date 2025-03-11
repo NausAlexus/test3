@@ -1400,14 +1400,6 @@ body::-webkit-scrollbar-track {
     
 }
 
-
-
-
-
-
-
-
-
 .blog-content{
     margin-top: 80px;
 }
@@ -1495,6 +1487,74 @@ body::-webkit-scrollbar-track {
                 color 0.3s ease;
 }
 
+.app-content {
+    margin-top: 60px;
+}
+
+.advantages-section {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px 120px;
+    background-color: #f9f9f9;
+}
+
+.advantages-title {
+    text-align: center;
+    font-size: 38px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.advantage-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.advantage-image {
+    width: 50%;
+    height: auto;
+}
+
+.advantage-text {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.advantage-subtitle {
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.advantage-description {
+    font-size: 16px;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .advantages-section {
+        padding: 40px 20px;
+    }
+    .advantage-block {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .advantage-image {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .advantage-text {
+        width: 100%;
+        padding: 0;
+    }
+
+    .revers-text {
+        flex-direction: column-reverse;
+    }
+}
 
 
 
@@ -1503,6 +1563,110 @@ body::-webkit-scrollbar-track {
 
 
 
+
+
+
+.vacancies-section {
+    padding: 20px;
+    border-radius: 8px;
+}
+.vacancies-section h2 {
+    color: #333;
+}
+
+.vacancies-description {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.vacancies-list {
+    list-style: none;
+    padding: 0;
+    color: #666;
+}
+
+.vacancy-item {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    transition: background-color 0.3s;
+}
+
+.vacancy-details {
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    border-left: 3px solid #d20000;
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.vacancy-details p {
+    margin-top: 0px;
+
+}
+
+.vacancy-details.show {
+    max-height: 200px;
+    opacity: 1;
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    .vacancies-description {
+        font-size: 1em;
+    }
+
+    .vacancy-item {
+        font-size: 0.9em;
+    }
+}
+
+.contact-section {
+    text-align: center; /* Center the text and button */
+    padding: 20px; /* Add some padding around the section */
+    background-color: #f8f9fa; /* Light background color to differentiate the section */
+    border-radius: 8px; /* Rounded corners for a smoother look */
+    margin: 20px; /* Margin to separate this section from others */
+}
+
+.contact-title {
+    font-size: 24px; /* Large font for the title */
+    color: #333; /* Dark color for good readability */
+    margin-bottom: 15px; /* Space below the title */
+}
+
+.contact-button {
+    display: inline-block; /* Make the link behave like a button */
+    padding: 10px 20px; /* Padding inside the button */
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none; /* Remove underline from the link */
+    border-radius: 5px; /* Rounded corners for the button */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.contact-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+@media (max-width: 600px) {
+    .contact-title {
+        font-size: 20px; /* Smaller font for mobile devices */
+    }
+
+    .contact-button {
+        padding: 8px 16px; /* Slightly smaller button padding for mobile */
+    }
+}
 
 @media (min-width: 1025px) {
     .header-link:hover,
