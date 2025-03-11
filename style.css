@@ -563,16 +563,6 @@ body::-webkit-scrollbar-track {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
 .new-arrivals-2 {
     padding: 20px;
     text-align: center;
@@ -640,10 +630,9 @@ body::-webkit-scrollbar-track {
     margin-top: 10px;
     padding: 4px 25px;
     background-color: transparent;
-    color: #7e490b;
+    color: #000000;
     text-decoration: none;
-    border: 2px solid #7e490b;
-    border-radius: 20px;
+    border: 2px solid #000000;
     display: inline-block;
     transition: background-color 0.3s ease;
 }
@@ -681,9 +670,129 @@ body::-webkit-scrollbar-track {
     }
 }
 
+.reviews-section {
+    overflow: hidden;
+}
 
+.reviews-section-title {
+    text-align: center;
+    font-size: 2em;
+    color: #000000;
+    margin-bottom: 15px;
+}
 
+.slider-review {
+    margin-top: 15px;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
 
+.review {
+    background-color: #db5837;
+    flex: 0 0 100%;
+    padding: 5px;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.review p {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.author {
+    font-weight: bold;
+    color: rgb(150, 55, 20);
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.buttons-review {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-review {
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 30px;
+    border: none;
+    color: black;
+    cursor: pointer;
+    background-color: #eaeaea;
+    transition: background-color 0.3s ease;
+}
+
+.review img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.comprehensive-care {
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.comprehensive-section-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.comprehensive-blocks-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comprehensive-image-block {
+    flex: 1 1 30%;
+    margin: 10px;
+}
+
+.comprehensive-care-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.comprehensive-text-block {
+    flex: 1 1 55%;
+    margin: 10px;
+}
+
+.comprehensive-text-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.comprehensive-product-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.comprehensive-benefits-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.comprehensive-benefits-list li {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .comprehensive-blocks-container {
+        flex-direction: column;
+    }
+
+    .comprehensive-image-block, .comprehensive-text-block {
+        flex: 1 1 100%;
+    }
+}
 
 
 
@@ -724,6 +833,12 @@ body::-webkit-scrollbar-track {
         background-color: #db5837;
     }
     .new-arrivals-prev-2:hover, .new-arrivals-next-2:hover {
+        background-color: #b92b12d0;
+    }
+    .order-btn-2:hover {
+        background-color: #b92b12d0;
+    }
+    .btn-review:hover {
         background-color: #b92b12d0;
     }
 }
