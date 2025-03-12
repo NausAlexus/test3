@@ -1254,7 +1254,7 @@ body::-webkit-scrollbar-track {
 .tournament-learn-more-btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007bff; /* Цвет кнопки */
+    background-color: #db5837; /* Цвет кнопки */
     color: #fff; /* Цвет текста кнопки */
     text-decoration: none;
     border-radius: 5px;
@@ -1308,7 +1308,7 @@ body::-webkit-scrollbar-track {
     display: inline-block; /* Визуальный блок в одну строку */
     padding: 10px 25px; /* Внутренние отступы кнопки */
     font-size: 1.1em; /* Размер шрифта кнопки */
-    background-color: #007bff; /* Основной цвет кнопки */
+    background-color: #db5837; /* Основной цвет кнопки */
     color: #fff; /* Цвет текста кнопки */
     text-decoration: none; /* Удаление подчеркивания */
     border-radius: 5px; /* Скругленные углы */
@@ -1389,7 +1389,7 @@ body::-webkit-scrollbar-track {
 }
 
 .elite-united-app .btn.primary {
-    background-color: #007BFF; /* Primary button color */
+    background-color: #db5837; /* Primary button color */
     color: #fff; /* White text */
 }
 
@@ -1788,7 +1788,7 @@ body::-webkit-scrollbar-track {
 .contact-button {
     display: inline-block; /* Make the link behave like a button */
     padding: 10px 20px; /* Padding inside the button */
-    background-color: #007bff; /* Button background color */
+    background-color: #db5837; /* Button background color */
     color: #fff; /* Button text color */
     text-decoration: none; /* Remove underline from the link */
     border-radius: 5px; /* Rounded corners for the button */
@@ -1849,3 +1849,254 @@ body::-webkit-scrollbar-track {
         color: rgb(61, 61, 61);
     }
 }
+.tournament-game-block{
+    position: relative;
+    padding-bottom: 50px;
+    width: 240px;
+}
+.tournament-learn-more-btn{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+
+.how-to-join-tournaments {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.steps-container-tournaments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+}
+
+.steps-container-tournaments::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: #db5837;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.step-tournaments {
+    width: 45%;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step-tournaments:nth-child(odd) {
+    align-self: flex-start;
+}
+
+.step-tournaments:nth-child(even) {
+    align-self: flex-end;
+}
+
+.step-tournaments:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.step-number-tournaments {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #db5837;
+    margin-bottom: 1rem;
+}
+
+.step-title-tournaments {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.step-description-tournaments {
+    font-size: 1rem;
+    color: #666;
+}
+
+.btn-tournaments {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-tournaments.primary-tournaments {
+    background-color: #db5837;
+    color: #fff;
+}
+
+.btn-tournaments.primary-tournaments:hover {
+    background-color: #2980b9;
+}
+
+/* Why Choose Us Section - Grid Layout with Icons */
+.why-choose-us-tournaments {
+    padding: 4rem 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.benefits-container-tournaments {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.benefit-tournaments {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-tournaments:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.benefit-icon-tournaments {
+    font-size: 2.5rem;
+    color: #db5837;
+    margin-bottom: 1rem;
+}
+
+.benefit-title-tournaments {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.benefit-description-tournaments {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Testimonials Section - Carousel Layout */
+.testimonials-tournaments {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.testimonials-container-tournaments {
+    display: flex;
+    overflow-x: auto;
+    gap: 2rem;
+    padding-bottom: 2rem;
+    scroll-snap-type: x mandatory;
+}
+
+.testimonial-tournaments {
+    flex: 0 0 300px;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-tournaments:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-image-tournaments {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.testimonial-text-tournaments {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.testimonial-author-tournaments {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+/* Upcoming Tournaments Section - Masonry Layout */
+.upcoming-tournaments-tournaments {
+    padding: 4rem 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.tournaments-list-tournaments {
+    columns: 3 250px;
+    gap: 2rem;
+}
+
+.tournament-card-tournaments {
+    break-inside: avoid;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tournament-card-tournaments:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.tournament-name-tournaments {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.tournament-date-tournaments {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.tournament-prize-tournaments {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.btn-tournaments.secondary-tournaments {
+    background-color: #db5837;
+    color: #fff;
+}
+
+.btn-tournaments.secondary-tournaments:hover {
+    background-color: #2980b9;
+}
+
+
