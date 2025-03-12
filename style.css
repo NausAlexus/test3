@@ -414,7 +414,6 @@ body::-webkit-scrollbar-track {
 
 .two-blocks-image-block {
     flex: 1;
-    min-width: 300px;
 }
 
 .two-blocks-dessert-image {
@@ -441,6 +440,18 @@ body::-webkit-scrollbar-track {
     font-size: 2em;
     margin: 10px 0;
     color: rgb(0, 0, 0) !important;
+}
+@media (max-width:900px) {
+    .two-blocks-section{
+        flex-direction: column;
+    }
+    .football-fantasy-guide{
+        max-width: 100% !important;
+    }
+    .how-it-work-content{
+        padding: 40px 0 !important;
+    }
+    
 }
 
 .two-blocks-text-description {
@@ -989,7 +1000,7 @@ body::-webkit-scrollbar-track {
     box-sizing: border-box;  
     max-height: 260px;
     background-color: rgb(239, 239, 239);
-    color: rgba(255, 255, 255, 0.773);
+    color: black;
   }
   .form-content textarea{
     margin-top: 10px;

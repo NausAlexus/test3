@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $headers = "From: $to \r\n";
 
         if (mail($to, $subject, $body, $headers)) {
-            header("Location: /thanks/");
+            header("Location: thanks/");
             exit();
         } else {
 
