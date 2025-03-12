@@ -1874,6 +1874,7 @@ body::-webkit-scrollbar-track {
     align-items: center;
     gap: 2rem;
     position: relative;
+    padding-bottom: 20px;
 }
 
 .steps-container-tournaments::before {
@@ -2100,3 +2101,47 @@ body::-webkit-scrollbar-track {
 }
 
 
+@media (min-width: 768px) and (max-width: 1024px) {
+    .steps-container-tournaments {
+        gap: 1.5rem; /* Slightly smaller gap for tablets */
+    }
+
+    .step-tournaments {
+        flex: 1 1 45%; /* Two steps per row on tablets */
+        max-width: 45%;
+    }
+}
+
+/* Mobile Styles (up to 767px) */
+@media (max-width: 767px) {
+    .how-to-join-tournaments {
+        padding: 2rem 1rem; /* Reduced padding for mobile */
+    }
+
+    .steps-container-tournaments {
+        gap: 1rem; /* Smaller gap for mobile */
+    }
+
+    .step-tournaments {
+        flex: 1 1 100%; /* Full width for mobile */
+        max-width: 100%;
+        padding: 1rem; /* Reduced padding for mobile */
+    }
+
+    .step-number-tournaments {
+        font-size: 1.75rem; /* Smaller step number for mobile */
+    }
+
+    .step-title-tournaments {
+        font-size: 1.1rem; /* Smaller title for mobile */
+    }
+
+    .step-description-tournaments {
+        font-size: 0.9rem; /* Smaller description for mobile */
+    }
+
+    .btn-tournaments {
+        font-size: 0.9rem; /* Smaller button text for mobile */
+        padding: 0.5rem 1rem; /* Smaller button padding for mobile */
+    }
+}
