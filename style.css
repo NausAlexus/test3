@@ -1889,7 +1889,7 @@ body::-webkit-scrollbar-track {
 }
 
 .step-tournaments {
-    width: 45%;
+    max-width: 45%;
     padding: 1.5rem;
     background-color: #fff;
     border-radius: 10px;
