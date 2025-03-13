@@ -1078,7 +1078,7 @@ body::-webkit-scrollbar-track {
   .introductione {
     position: relative;
     height: 900px;
-    background-image: url('./img/tournaments/t1.jpg');
+    background-image: url('/img/tournaments/t1.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
